@@ -14,8 +14,8 @@ public class Player extends Entity{
     
 
 
-    private int maxHealth = 3000; // Máu tối đa, giả sử là 3.000 để phù hợp với số trên hình ảnh
-    private int currentHealth = 3000; // Máu hiện tại
+    private int maxHealth = 300; // Máu tối đa, giả sử là 3.000 để phù hợp với số trên hình ảnh
+    private int currentHealth = 300; // Máu hiện tại
     private int barWidth = 400; // Chiều rộng của thanh máu
     private int barHeight = 20; // Chiều cao của thanh máu
     
@@ -49,31 +49,7 @@ public class Player extends Entity{
         speed = 6;
         direction = "down";
     }
-    // public void drawHealthBar(Graphics2D g2) {
-    //     // Vẽ nền thanh máu (màu xám)
-    //     g2.setColor(new Color(50, 50, 50)); // Màu nền xám tối
-    //     g2.fillRoundRect(0, 0, 400, 30, 15, 15); // Vẽ nền thanh máu với bo góc
-        
-    //     // Vẽ viền cho thanh máu (màu đen)
-    //     g2.setColor(Color.BLACK);
-    //     g2.setStroke(new BasicStroke(2)); // Đặt độ dày viền
-    //     g2.drawRoundRect(0, 0, 400, 30, 15, 15); // Vẽ viền thanh máu
-        
-    //     // Tính chiều rộng của thanh máu
-    //     int healthBarWidth = (int) (400 * ((double) currentHealth / maxHealth)); 
-        
-    //     // Vẽ thanh máu hiện tại (màu đỏ)
-    //     // Chuyển từ đỏ nhạt đến đỏ đậm tùy theo máu còn lại
-    //     int red = 255;
-    //     int green = (int) (255 * ((double) currentHealth / maxHealth)); 
-    //     g2.setColor(new Color(red, green, 0)); // Màu chuyển dần từ đỏ sang vàng nhạt
-    //     g2.fillRoundRect(0, 0, healthBarWidth, 30, 15, 15); // Vẽ thanh máu với bo góc
-        
-    //     // Đổ bóng cho thanh máu (cho hiệu ứng nổi bật)
-    //     g2.setColor(new Color(0, 0, 0, 50)); // Màu đổ bóng nhẹ
-    //     g2.fillRoundRect(3,3, 400, 30, 15, 15); // Đổ bóng nhẹ cho thanh máu
-    // }
-
+    
 
     public void drawHealthBar(Graphics2D g2) {
         // Vẽ viền ngoài
@@ -185,56 +161,7 @@ public class Player extends Entity{
             e.printStackTrace();
         }
     }
-    // public void getPlayerImage_left(){
-    //     try {
-    //         //standing
-    //         stand1 = ImageIO.read(getClass().getResourceAsStream("/res/standard1.PNG"));
-    //         stand2 = ImageIO.read(getClass().getResourceAsStream("/res/standard2.PNG"));
-    //         stand3 = ImageIO.read(getClass().getResourceAsStream("/res/standard3.PNG"));
-    //         stand4 = ImageIO.read(getClass().getResourceAsStream("/res/standard4.PNG"));
-    //         stand5 = ImageIO.read(getClass().getResourceAsStream("/res/standard5.PNG"));
-            
-
-    //         // move
-    //         //up + down
-    //         up_down_1 = ImageIO.read(getClass().getResourceAsStream("/res/standard1.PNG"));
-    //         up_down_2 = ImageIO.read(getClass().getResourceAsStream("/res/right1.PNG"));
-
-    //         //right
-    //         right1 = ImageIO.read(getClass().getResourceAsStream("/res/right1.PNG"));
-    //         right2 = ImageIO.read(getClass().getResourceAsStream("/res/right2.PNG"));
-    //         right3 = ImageIO.read(getClass().getResourceAsStream("/res/right3.PNG"));
-
-    //         //left
-    //         left1 = ImageIO.read(getClass().getResourceAsStream("/res/left1.PNG"));
-    //         left2 = ImageIO.read(getClass().getResourceAsStream("/res/left2.PNG"));
-    //         left3 = ImageIO.read(getClass().getResourceAsStream("/res/left3.PNG"));
-
-
-            
-            
-    //         //skill j
-    //         j1 = ImageIO.read(getClass().getResourceAsStream("/res/quaytay1.PNG"));
-    //         j2 = ImageIO.read(getClass().getResourceAsStream("/res/quaytay2.PNG"));
-    //         j3 = ImageIO.read(getClass().getResourceAsStream("/res/quaytay3.PNG"));
-    //         j4 = ImageIO.read(getClass().getResourceAsStream("/res/quaytay4.PNG"));
-    //         j5 = ImageIO.read(getClass().getResourceAsStream("/res/quaytay5.PNG"));
-    //         j6 = ImageIO.read(getClass().getResourceAsStream("/res/quaytay6.PNG"));
-            
-    //         //skill k
-    //         k2 = ImageIO.read(getClass().getResourceAsStream("/res/skill2.PNG"));
-    //         k3 = ImageIO.read(getClass().getResourceAsStream("/res/skill3.PNG"));
-    //         k4 = ImageIO.read(getClass().getResourceAsStream("/res/skill4.PNG"));
-    //         k5 = ImageIO.read(getClass().getResourceAsStream("/res/skill5.PNG"));
-    //         k6 = ImageIO.read(getClass().getResourceAsStream("/res/skill6.PNG"));
-    //         k7 = ImageIO.read(getClass().getResourceAsStream("/res/skill8.PNG"));
-    //         k8 = ImageIO.read(getClass().getResourceAsStream("/res/skill7.PNG"));
-    //         k9 = ImageIO.read(getClass().getResourceAsStream("/res/skill9.PNG"));
-            
-    //     } catch (IOException e) {
-    //         e.printStackTrace();
-    //     }
-    // }
+    
 
     public void updateHealth(int newHealth) {
         currentHealth = newHealth;
@@ -268,17 +195,7 @@ public class Player extends Entity{
             // Giả định ban đầu là nhân vật không di chuyển
             isMoving = false;
     
-            // Kiểm tra nếu có phím nào được nhấn để xác định trạng thái di chuyển
-            // if (keyH.upPressed) {
-            //     direction = "up";
-            //     y -= speed;
-            //     isMoving = true;
-            // } 
-            // if (keyH.downPressed) {
-            //     direction = "down";
-            //     y += speed;
-            //     isMoving = true;
-            // } 
+            
             if (keyH.leftPressed) {
                 direction = "left";
                 x -= speed;
