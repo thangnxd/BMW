@@ -28,7 +28,7 @@ public class KeyHandlers implements KeyListener{
         if (code == KeyEvent.VK_D){
             rightPressed = true;
         }
-        if (code == KeyEvent.VK_S){
+        if (code == KeyEvent.VK_J){
             jPressed = true;
         }
         if (code == KeyEvent.VK_K){
@@ -52,7 +52,7 @@ public class KeyHandlers implements KeyListener{
         if (code == KeyEvent.VK_D){
             rightPressed = false;
         }
-        if (code == KeyEvent.VK_S){
+        if (code == KeyEvent.VK_J){
             jPressed = false;
         }
         if (code == KeyEvent.VK_K){

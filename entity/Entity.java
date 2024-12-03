@@ -28,6 +28,7 @@ public class Entity {
     public BufferedImage BOSS_skill1_left_1, BOSS_skill1_left_2, BOSS_skill1_left_3, BOSS_skill1_left_4, BOSS_skill1_left_5, BOSS_skill1_left_6;
     public BufferedImage BOSS_SKILL2_right_1, BOSS_SKILL2_right_2, BOSS_SKILL2_right_3, BOSS_SKILL2_right_4, BOSS_SKILL2_right_5;
     public BufferedImage BOSS_SKILL2_left_1, BOSS_SKILL2_left_2, BOSS_SKILL2_left_3, BOSS_SKILL2_left_4, BOSS_SKILL2_left_5;
-
-
+    public BufferedImage BOSS_SKILL3_right_1, BOSS_SKILL3_right_2, BOSS_SKILL3_right_3, BOSS_SKILL3_right_4, BOSS_SKILL3_right_5, BOSS_SKILL3_right_6;
+    public BufferedImage BOSS_SKILL3_left_1, BOSS_SKILL3_left_2, BOSS_SKILL3_left_3, BOSS_SKILL3_left_4, BOSS_SKILL3_left_5, BOSS_SKILL3_left_6;
 }
+
